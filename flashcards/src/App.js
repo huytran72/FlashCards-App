@@ -45,8 +45,7 @@ const questions = [
 ];
 
 function FlashCards() {
-  const [selectedID, ]
-
+  const [selectedID, setselectedID] = useState(questions[0].id);
 
   return (
     <div className="flashcards">
