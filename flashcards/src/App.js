@@ -1,4 +1,6 @@
 import "./styles.css";
+import React from "react";
+import { useState } from "react";
 
 export default function App() {
   return (
@@ -43,6 +45,9 @@ const questions = [
 ];
 
 function FlashCards() {
+  const [selectedID, ]
+
+
   return (
     <div className="flashcards">
       {questions.map((question) => (
