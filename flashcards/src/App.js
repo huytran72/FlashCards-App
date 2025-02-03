@@ -47,6 +47,8 @@ const questions = [
 function FlashCards() {
   const [selectedID, setselectedID] = useState(questions[0].id);
 
+  function handleClick() {}
+
   return (
     <div className="flashcards">
       {questions.map((question) => (
