@@ -48,7 +48,7 @@ function FlashCards() {
   const [selectedID, setselectedID] = useState(questions[0].id);
 
   function handleClick() {
-    setselectedID(id);
+    setselectedID(id !== selectedID ? id : null);
   }
 
   return (
