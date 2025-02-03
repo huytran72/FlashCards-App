@@ -50,7 +50,10 @@ function FlashCards() {
   return (
     <div className="flashcards">
       {questions.map((question) => (
-        <div key={question.id} className="flashcard">
+        <div
+          key={question.id}
+          className={question.id === selectedID ? "selected" : ""}
+        >
           <p>
             {question.id === selectedID ? question.answer : question.question}
           </p>
